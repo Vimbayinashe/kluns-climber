@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kluns Climber</title>
+</head>
+<body>
+    <h1>The Kluns Climber</h1>
+
+    <section id = "page-one">
+        <div id = "selections">
+            <label for="level">Choose level:</label>
+            <select name="level" id="level">
+                <option value="0">Easy</option>
+                <option value="1">Medium</option>
+                <option value="3">Hard</option>
+            </select>
+        </div>
+        
+        <div id = "instruction-choice">
+            <label for="skip"></label>
+            <input type="checkbox" name="instruction-choice" id="skip">
+        </div>
+        
+        <div id = "description">
+            <!-- Skapa senare -->
+        </div>
+        
+        <button id = "first-choice">OK</button>
+    </section>
+
+    <section id = "page-two" class = "hidden">
+        <h2>Instructions</h2>
+        <!-- Instruction to be placed here 
+            static page except for 
+        <button id = "done">DONE</button>
+        -->
+    </section>
+
+    <section id = "game">
+        
+        <div>
+            <div id = "time"></div>
+            <div id = "lives"></div>
+        </div>
+
+        <div id = "go" class="hidden">GO!</div>
+
+        <div id = "levels">
+
+            <div id = "five" value = "5">
+                <div> Level 5:</div>
+                <div class="opponent">
+                    <img src="" alt=""> <!-- sprite of opponent  -->
+                </div>
+                <div class = "sprite hidden" id = "5">
+                    <img src="" alt="hero">
+                </div>
+            </div>
+
+            <div id = "four" value = "4">
+                <div Level 4:></div Level :>
+                <div class="opponent">
+                    <img src="" alt=""> <!-- sprite of opponent  -->
+                </div>
+                <div class = "sprite hidden" id = "5">
+                    <img src="" alt="hero">
+                </div>
+            </div>
+
+            <div id = "three" value = "3">
+                <div Level 3:></div>
+                <div class="opponent">
+                    <img src="" alt=""> <!-- sprite of opponent  -->
+                </div>
+                <div class = "sprite hidden" id = "5">
+                    <img src="" alt="hero">
+                </div>
+            </div>
+
+            <div id = "two" value = "2">
+                <div Level 2:></div>
+                <div class="opponent">
+                    <img src="" alt=""> <!-- sprite of opponent  -->
+                </div>
+                <div class = "sprite hidden" id = "5">
+                    <img src="" alt="hero">
+                </div>
+            </div>
+
+            <div id = "one" value = "1">
+                <div Level 1:></div>
+                <div class="opponent">
+                    <img src="" alt=""> <!-- sprite of opponent  -->
+                </div>
+                <div class = "sprite hidden" id = "5">
+                    <img src="" alt="hero">
+                </div>
+            </div>
+            
+        </div>
+
+        <div id = "info">
+            <div class = "information">
+                <div>Level: </div>
+                <div id = "current-level"><!-- JS: level --></div>
+            </divclass = "information">
+            <div class = "information">
+                <div>Score:</div>
+                <div id = "score"><!-- JS: Level: score ( 5 : 1) --></div>
+            </div>
+
+        </div>
+
+        <div id = "choices" class="hidden">  
+            <!-- is visible after Go - one weapon chosen  -->
+
+            <div id = "rock">
+                Rock <!-- pic/sprite of rock  -->
+            </div id = "">
+            <div id = "scissors">
+                Scissors <!-- pic/sprite of Scissors  -->       
+            </div id = "">
+            <div id = "paper">
+                Paper <!-- pic/sprite of Paper  -->       
+            </div id = "">
+        </div>
+
+        <div id = "result" class="hidden">
+            <!-- JS: "You have won Level 1" **check sketch -->
+        </div>
+
+    </section>
+    
+</body>
+</html>
